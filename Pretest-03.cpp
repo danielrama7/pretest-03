@@ -6,15 +6,15 @@ Tanggal buat        : 12 Maret 2019
 Deskripsi program   :
 */
 
-include<iostream>
+#include<iostream>
 using namespace std;
 
 struct r_mhs{
 char npm[14];
-char nama[40]
+char nama[40];
 float ipk;
 };
-
+int n;
 typedef r_mhs larikMhs[30];
 
 void banyakData(int&n)
@@ -51,8 +51,9 @@ void sortNPM(larikMhs& mhs, int n)
  }
 }
 int main(){
-banyakData(int&n)
-inputMhs(mhs,n)
-sortNPM( mhs,n)
-cetakMhs(mhs,n)
+larikMhs mhs;
+banyakData(n);
+inputMhs(mhs,n);
+sortNPM(mhs,n);
+cetakMhs(mhs,n);
 }
